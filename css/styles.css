@@ -1,0 +1,205 @@
+
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/*Estilos del body general */
+
+body {
+    background-image: linear-gradient(#0c0c0c, #181818, #0c0c0c);
+    color: whitesmoke;
+}
+
+body img {
+    width: 250px;
+    height: 300px;
+}
+
+body b {
+    color: #e79022;
+}
+
+body p {
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilos del header de index */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    border-bottom: 1px solid rgb(147, 69, 0);
+    position: sticky;
+    top: 0;
+    background-color: #0c0c0c;
+    height: 100px;
+}
+
+header h1 {
+    padding-left: 26px;
+    padding-top: 20px;
+    color: rgb(210, 210, 210);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.color-ul {
+    display: flex;
+    padding: 25px;
+    background-color: #0c0c0c;
+}
+
+.color-ul li {
+    margin-right: 54px;
+    border: 1.4px solid orangered;
+    box-shadow: 1px 1.3px rgb(109, 52, 52);
+    height: 36px;
+}
+
+.color-ul a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 6px;
+}
+
+.color-boton {
+    border: 1px solid orangered;
+    margin-top: 0;
+}
+
+/* Estilos del main de index */
+
+/* Estilos del parrafo principal */
+
+.presentacionIndex {
+    margin-top: 180px;
+    text-align: center;
+}
+
+.presentacionIndex h2 {
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+
+.parrafoIndex {
+    font-size: x-large;
+    margin-bottom: 156px;
+}
+
+.parrafo-unoIndex {
+    margin-bottom: 42px;
+    width: 750px;
+    margin-left: 260px;
+    border: 2px solid orangered;
+    border-radius: 34px;
+    padding: 16px;
+    box-shadow: 1px 1px 7px rgb(109, 52, 52);
+}
+
+/* Estilos de imagenes de la presentacion de la pagina */
+
+.imagenes-presentacion {
+    margin-top: 100px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    border-bottom: 0.4px solid rgb(147, 69, 0);
+}
+.imagenes-presentacion a {
+    border: 1.8px solid #e89d10;
+    color: whitesmoke;
+    box-shadow: 1px 0.4px 5px rgb(109, 52, 52);
+}
+
+.imagenes-presentacion h3 {
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Estilos de cada una de las consolas de index */
+
+/* Play Station 2 index */
+
+.play-index {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.play-index h3 {
+    font-size: 26px;
+    color: #ce8b0f;
+    text-decoration: underline;
+}
+
+.play-index p {
+    margin-top: 40px;
+    width: 700px;
+    margin-left: 288px;
+    border: 2px solid #e89d10;
+    border-radius: 28px;
+    box-shadow: 1px 1px 7px rgb(109, 52, 52);
+    padding: 15px;
+}
+
+/* Estilos de las imagenes de play station general de index */
+
+.playImagenes-index {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 70px;
+    border-bottom: 1px solid orangered;
+    padding-bottom: 100px;
+}
+
+.playImagenes-index img {
+    border: 2px solid whitesmoke;
+    box-shadow: 1px 1px 3px whitesmoke;
+}
+
+.modifyImage-uno {
+    margin-top: 80px;
+}
+
+.modifyImage-dos {
+    margin-top: 80px;
+}
+
+
+
+/* Estilos de Novedades.html */
+
+/* Estilo del main de novedades */
+
+/* Introduccion */
+
+.tituloNovedades {
+    margin-top: 150px;
+}
+
+.tituloNovedades h2 {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.parrafoNovedades-uno {
+    margin-top: 150px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.parrafoNovedades-dos {
+    text-align: center;
+    margin-top: 70px;
+}
