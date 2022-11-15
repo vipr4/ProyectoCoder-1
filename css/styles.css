@@ -29,6 +29,11 @@ body p {
     font-family: 'Times New Roman', Times, serif;
 }
 
+body h2 {
+    font-size: 32px;
+    font-family: 'Orbitron', sans-serif;
+}
+
 /* Estilos del header de index */
 
 header {
@@ -44,9 +49,10 @@ header {
 
 header h1 {
     padding-left: 26px;
-    padding-top: 20px;
-    color: rgb(210, 210, 210);
-    font-family: 'Times New Roman', Times, serif;
+    padding-top: 24px;
+    color: rgb(224, 224, 224);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 34px;
 }
 
 .color-ul {
@@ -86,12 +92,25 @@ header h1 {
 
 .presentacionIndex h2 {
     margin-bottom: 16px;
-    font-size: 32px;
+}
+
+.presentacionIndex div {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.presentacionIndex div img {
+    border: 2px solid whitesmoke;
+    box-shadow: 1px 0.4px 6px grey;
+    width: 300px;
+    height: 350px;
 }
 
 .parrafoIndex {
     font-size: x-large;
-    margin-bottom: 156px;
+    margin-bottom: 100px;
 }
 
 .parrafo-unoIndex {
@@ -117,13 +136,15 @@ header h1 {
 .imagenes-presentacion a {
     border: 1.8px solid #e89d10;
     color: whitesmoke;
-    box-shadow: 1px 0.4px 5px rgb(109, 52, 52);
+    box-shadow: 1px 0.4px 3px orange;
 }
 
 .imagenes-presentacion h3 {
     text-decoration: none;
     text-align: center;
     padding: 12px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
 }
 
 /* Estilos de cada una de las consolas de index */
