@@ -242,8 +242,6 @@ header h1 {
     margin-bottom: 60px;
 }
 
-/* Play Station 2 */
-
 /* Estilos de cada descripcion de videojuegos */
 
 .descripcion-videojuego {
@@ -270,4 +268,65 @@ header h1 {
 .p-dosNovedades {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+
+/* Estilos de preguntas.html*/
+
+/*Estilo del grid de preguntas */
+
+.grids-preguntas {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+    grid-template-areas: 
+        "main titulo titulo"
+        "main form form"
+        "main form form";
+    
+    margin-top: 10px;
+    gap: 10px;
+}
+
+/* Estilo del main de preguntas */
+
+.mainPreg {
+    grid-area: main;
+    border: 2px solid rgb(70, 10, 10);
+    padding: 10px;
+}
+
+.mainPreg h3 {
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.mainPreg p {
+    margin-top: 20px;
+}
+
+/* Estilo de section-uno dentro de preguntas */
+
+.section-unoPreg {
+    grid-area: titulo;
+    border: 2px solid rgb(70, 10, 10);
+    padding: 10px;
+}
+
+.section-unoPreg h2 {
+    color: whitesmoke;
+    text-shadow: 1px 1px rgb(45, 0, 0);
+}
+
+/* Estilo del formulario */
+
+.formulario-unoPreg {
+    grid-area: form;
+    border: 2px solid rgb(70, 10, 10);
+    padding: 10px;
+}
+
+.formulario-unoPreg div {
+    margin: 10px;
 }
