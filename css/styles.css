@@ -34,6 +34,13 @@ body h2 {
     font-family: 'Orbitron', sans-serif;
 }
 
+body h3 {
+    font-size: 26px;
+    color: #ce8b0f;
+    text-decoration: underline;
+    font-family: 'Orbitron', sans-serif;
+}
+
 /* Estilos del header de index */
 
 header {
@@ -139,7 +146,7 @@ header h1 {
     box-shadow: 1px 0.4px 3px orange;
 }
 
-.imagenes-presentacion h3 {
+.imagenes-presentacion h4 {
     text-decoration: none;
     text-align: center;
     padding: 12px;
@@ -154,12 +161,6 @@ header h1 {
 .play-index {
     margin-top: 100px;
     text-align: center;
-}
-
-.play-index h3 {
-    font-size: 26px;
-    color: #ce8b0f;
-    text-decoration: underline;
 }
 
 .play-index p {
@@ -223,4 +224,50 @@ header h1 {
 .parrafoNovedades-dos {
     text-align: center;
     margin-top: 70px;
+}
+
+/* Estilos de las novedades de cada Consola-Novedades (general) */
+
+.descripcionPs {
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.descripcionPs h3 {
+    text-align: center;
+}
+
+.descripcionPs p {
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+
+/* Play Station 2 */
+
+/* Estilos de cada descripcion de videojuegos */
+
+.descripcion-videojuego {
+    margin-top: 70px;
+    padding: 14px;
+}
+
+.descripcion-videojuego h4 {
+    margin-bottom: 30px;
+}
+
+.descripcion-videojuego div {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 200px;
+}
+
+.descripcion-videojuego img {
+    border: 2px solid whitesmoke;
+    box-shadow: 1px 0.4px 6px grey;
+}
+
+.p-dosNovedades {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
