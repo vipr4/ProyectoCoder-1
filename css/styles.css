@@ -45,7 +45,7 @@ body a {
     text-decoration: none;
 }
 
-/* Estilos del header de index */
+/* Estilos del header general */
 
 header {
     display: flex;
@@ -55,7 +55,7 @@ header {
     position: sticky;
     top: 0;
     background-color: #0c0c0c;
-    height: 100px;
+    height: 90px;
 }
 
 header h1 {
@@ -90,6 +90,21 @@ header h1 {
 .color-boton {
     border: 1px solid orangered;
     margin-top: 0;
+}
+
+/* Estilos de formularion (label) general */
+
+.label-uno {
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilos del footer general */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
 }
 
 /* Estilos del main de index */
@@ -230,7 +245,7 @@ header h1 {
     margin-top: 70px;
 }
 
-/* Estilos de las novedades de cada Consola-Novedades (general) */
+/* Estilos de las novedades de cada Consola (general en novedades) */
 
 .descripcionPs {
     margin-top: 100px;
@@ -244,6 +259,7 @@ header h1 {
 .descripcionPs p {
     margin-top: 28px;
     margin-bottom: 60px;
+    text-align: center;
 }
 
 /* Estilos de cada descripcion de videojuegos */
@@ -304,6 +320,7 @@ header h1 {
 .mainPreg h2 {
     color: whitesmoke;
     margin: 10px;
+    text-decoration: underline;
 }
 
 .mainPreg p {
@@ -338,6 +355,7 @@ header h1 {
     color: whitesmoke;
     text-decoration: none;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .section-unoPreg div {
@@ -345,10 +363,138 @@ header h1 {
     margin-left: 10px;
 }
 
-.section-unoPreg label {
+.section-unoPreg fieldset {
+    border: 1px solid #e89d10;
+    padding: 5px;
+    width: 710px;
+}
+
+.end-uno {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+/* Aqui se colocaran los estilos de Tus ideas.html para pantallas de celular*/
+
+/* header */
+
+.header-tusIdeas {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid rgb(147, 69, 0);
+    position: sticky;
+    top: 0;
+    background-color: #0c0c0c;
+    height: 80px;
+}
+
+.header-tusIdeas h1 {
+    padding-left: 26px;
+    padding-top: 20px;
+    color: rgb(224, 224, 224);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+}
+
+/* Main */
+
+.main-ideas {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+.main-ideas h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+/* Estilos de las sections */
+
+.parrafo-ideasUno {
+    text-align: center;
+    border: 1.4px solid orangered;
+    box-shadow: 1px 0.4px 6px rgb(112, 46, 46);
+    border-radius: 16px;
+    width: 450px;
+    height: 130px;
+    margin-left: 15px;
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.parrafo-ideasUno img {
+    width: 100px;
+    height: 120px;
+    margin-top: 30px;
+}
+
+/* Estilos de la section -forms */
+
+.forms-ideas {
+    text-align: center;
+    margin-top: 170px;
+}
+
+.forms-ideas form {
+    text-align: left;
+    margin: 10px;
+}
+
+.forms-ideas fieldset {
+    border: 1px solid #e89d10;
     padding: 10px;
 }
 
-.end {
-    margin-top: 20px;
+/* Estilos de tus ideas.html para computadoras */
+
+@media screen and (min-width: 800px) {
+    
+    .header-tusIdeas {
+        height: 90px;
+        justify-content: space-around;
+    }
+    
+    .grid-ideas {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 10px;
+
+        grid-template-areas: 
+        "main parrafo parrafo"
+        "main parrafo parrafo"
+        "main forms forms";
+    }
+
+    /* Estilos del main */
+
+    .main-ideas {
+        grid-area: main;
+        margin-top: 70px;
+        border-right: 1px solid #e89d10;
+    }
+
+    .main-ideas img {
+        margin-top: 20px;
+    }
+
+    /* Estilos de la section 1 */
+
+    .parrafo-ideasUno {
+        grid-area: parrafo;
+        margin-top: 70px;
+        margin-left: 90px;
+    }
+
+    /* Estilos de la section 2 */
+
+    .forms-ideas {
+        grid-area: forms;
+    }
+
+    .forms-ideas p {
+        padding: 8px;
+    }
 }
