@@ -60,7 +60,7 @@ header {
 
 header h1 {
     padding-left: 26px;
-    padding-top: 24px;
+    padding-top: 22px;
     color: rgb(224, 224, 224);
     font-family: 'Orbitron', sans-serif;
     font-size: 34px;
@@ -149,7 +149,7 @@ footer {
     box-shadow: 1px 1px 7px rgb(109, 52, 52);
 }
 
-/* Estilos de imagenes de la presentacion de la pagina */
+/* Estilos de imagenes de la presentacion de la pagina (index y novedades) */
 
 .imagenes-presentacion {
     margin-top: 100px;
@@ -171,6 +171,7 @@ footer {
     padding: 12px;
     font-family: 'Orbitron', sans-serif;
     font-size: 1rem;
+    text-decoration: underline;
 }
 
 /* Estilos de cada una de las consolas de index */
@@ -206,6 +207,11 @@ footer {
 .playImagenes-index img {
     border: 2px solid whitesmoke;
     box-shadow: 1px 1px 3px whitesmoke;
+}
+
+.playImagenes-index img:hover {
+    box-shadow: 1px 0.4px 5px greenyellow;
+    transform: scale(1.04);
 }
 
 .modifyImage-uno {
@@ -297,13 +303,13 @@ footer {
 
 .grids-preguntas {
     display: grid;
-    grid-template-columns: 3fr 2fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
 
     grid-template-areas: 
-        "main titulo titulo"
-        "main titulo titulo"
-        "main titulo titulo";
+        "main titulo"
+        "main titulo"
+        "main titulo";
     
     margin-top: 10px;
     gap: 10px;
@@ -366,7 +372,7 @@ footer {
 .section-unoPreg fieldset {
     border: 1px solid #e89d10;
     padding: 5px;
-    width: 710px;
+    width: 620px;
 }
 
 .end-uno {
@@ -452,14 +458,22 @@ footer {
 
 @media screen and (min-width: 800px) {
     
+    /*  Estilos del header */
+
     .header-tusIdeas {
         height: 90px;
         justify-content: space-around;
     }
+
+    .header-tusIdeas h1 {
+        padding-top: 22px;
+    }
     
+    /* Estilos de grid */
+
     .grid-ideas {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr 2fr;
         gap: 10px;
 
         grid-template-areas: 
@@ -485,7 +499,7 @@ footer {
     .parrafo-ideasUno {
         grid-area: parrafo;
         margin-top: 70px;
-        margin-left: 90px;
+        margin-left: 190px;
     }
 
     /* Estilos de la section 2 */
@@ -496,5 +510,105 @@ footer {
 
     .forms-ideas p {
         padding: 8px;
+    }
+}
+
+
+
+/* Estilos de redes.html para celulares */
+
+/* header */ 
+
+.header-redes {
+    justify-content: space-between;
+}
+
+.header-redes h1 {
+    font-size: 32px;
+    margin-top: 1px;
+}
+
+/* Main */
+
+.main-redes div {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.main-redes h3 {
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    margin-top: 50px;
+}
+.logos img {
+    width: 80px;
+    height: 130px;
+}
+
+.parrafo-redes {
+    margin-top: 50px;
+}
+
+/* Estilos de la section-giffs */
+
+.gifs div {
+    margin-top: 80px;
+    gap: 10px;
+    text-align: center;
+}
+
+.gifs img {
+    border: 1px solid whitesmoke;
+    box-shadow: 1px 1px 4px grey;
+    margin-bottom: 80px;
+    width: 300px;
+    height: 350px;
+}
+
+/* Estilos de Redes.html para computadoras */
+
+@media screen and (min-width: 800px) {
+
+    /* Estilos del header */
+
+    .header-redes {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Estilos de grid */
+
+    .grid-redes {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 10px;
+
+        grid-template-areas: 
+        "mainUno gifs"
+        "mainUno gifs"
+        "mainUno gifs";
+    }
+
+    /* main */ 
+
+    .main-redes {
+        grid-area: mainUno;
+    }
+
+    .parrafo-redes {
+        margin-top: 50px;
+    }
+
+    /* Section-gifs */
+
+    .gifs {
+        grid-area: gifs;
+        border-left: 1px solid #e89d10;
     }
 }
