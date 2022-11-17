@@ -41,6 +41,10 @@ body h3 {
     font-family: 'Orbitron', sans-serif;
 }
 
+body a {
+    text-decoration: none;
+}
+
 /* Estilos del header de index */
 
 header {
@@ -277,13 +281,13 @@ header h1 {
 
 .grids-preguntas {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 3fr 2fr 2fr;
     grid-template-rows: 1fr 1fr 1fr ;
 
     grid-template-areas: 
         "main titulo titulo"
-        "main form form"
-        "main form form";
+        "main titulo titulo"
+        "main titulo titulo";
     
     margin-top: 10px;
     gap: 10px;
@@ -293,40 +297,58 @@ header h1 {
 
 .mainPreg {
     grid-area: main;
-    border: 2px solid rgb(70, 10, 10);
     padding: 10px;
+    padding-top: 20px;
 }
 
-.mainPreg h3 {
+.mainPreg h2 {
     color: whitesmoke;
     margin: 10px;
 }
 
 .mainPreg p {
     margin-top: 20px;
+    margin-left: 10px;
+}
+
+.img-grid {
+    width: 280px;
+    height: 350px;
+    border: 1px solid #e89d10;
+    box-shadow: 1px 0.4px 4px orange;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 /* Estilo de section-uno dentro de preguntas */
 
 .section-unoPreg {
     grid-area: titulo;
-    border: 2px solid rgb(70, 10, 10);
-    padding: 10px;
+    text-align: center;
+    margin-top: 32px;
 }
 
-.section-unoPreg h2 {
+.section-unoPreg img {
+    border: 1px solid whitesmoke;
+    box-shadow: 1px 0.4px 5px grey;
+    margin-top: 12px;
+}
+
+.section-unoPreg h3 {
     color: whitesmoke;
-    text-shadow: 1px 1px rgb(45, 0, 0);
+    text-decoration: none;
+    margin-top: 40px;
 }
 
-/* Estilo del formulario */
+.section-unoPreg div {
+    text-align: left;
+    margin-left: 10px;
+}
 
-.formulario-unoPreg {
-    grid-area: form;
-    border: 2px solid rgb(70, 10, 10);
+.section-unoPreg label {
     padding: 10px;
 }
 
-.formulario-unoPreg div {
-    margin: 10px;
+.end {
+    margin-top: 20px;
 }
