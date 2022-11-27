@@ -296,6 +296,17 @@ footer {
     margin-bottom: 50px;
 }
 
+.iframe-ps {
+    display: flex;
+    align-items: center;
+}
+
+.iframe-botom {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid orangered;
+    padding-bottom: 90px;
+}
 
 /* Estilos de preguntas.html*/
 
