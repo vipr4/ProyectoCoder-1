@@ -342,7 +342,8 @@ footer {
 
 .section-unoPreg h3 {
     margin-top: 50px;
-    padding: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
     color: whitesmoke;
 }
 
@@ -472,7 +473,7 @@ footer {
 
 .main-ideas {
     text-align: center;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-bottom: 60px;
 }
 
@@ -590,22 +591,11 @@ footer {
 
 /* Estilos de redes.html para celulares */
 
-/* header */ 
-
-.header-redes {
-    justify-content: space-between;
-}
-
-.header-redes h1 {
-    font-size: 32px;
-    margin-top: 1px;
-}
-
 /* Main */
 
 .main-redes div {
     text-align: center;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .main-redes h3 {
@@ -666,6 +656,8 @@ footer {
         "mainUno gifs"
         "mainUno gifs"
         "mainUno gifs";
+
+        margin-top: 90px;
     }
 
     /* main */ 
@@ -674,8 +666,20 @@ footer {
         grid-area: mainUno;
     }
 
+    .main-redes p {
+        padding: 0px 20px;
+    }
+
+    .main-redes div {
+        margin-top: 0;
+    }
+
+    .logos img {
+        margin-top: 60px;
+    }
+
     .parrafo-redes {
-        margin-top: 50px;
+        margin-top: 90px;
     }
 
     /* Section-gifs */
@@ -683,5 +687,9 @@ footer {
     .gifs {
         grid-area: gifs;
         border-left: 1px solid #e89d10;
+    }
+
+    .gifs div {
+        margin-top: 0;
     }
 }
