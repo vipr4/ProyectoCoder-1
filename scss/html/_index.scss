@@ -1,0 +1,169 @@
+/* Estilos de cada una de las consolas de index en pantalla de celular */
+
+/* Estilos del parrafo principal */
+
+.presentacionIndex {
+    margin-top: 160px;
+    text-align: center;
+    h2 {
+        margin-bottom: 16px;
+    }
+    div {
+        display: block;
+        align-content: center;
+        margin-bottom: 110px;
+        img {
+            border: 2px solid $color-bordeImg;
+            box-shadow: 1px 0.4px 6px grey;
+            width: 270px;
+            height: 320px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.parrafoIndex {
+    font-size: 1.2rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 1px 20px;
+}
+
+/* Play Station 2 index */
+
+.play-index {
+    margin-top: 100px;
+    text-align: center;
+    p {
+        margin-top: 40px;
+        width: 460px;
+        margin-left: 0.7rem;
+        border: 2px solid $color-bordeParrafo;
+        border-radius: 28px;
+        box-shadow: 1px 1px 7px $color-shadow;
+        padding: 18px;
+    }
+}
+
+/* Estilos de las imagenes de play station */
+
+.playImagenes-index {
+    display: block;
+    align-content: center;
+    text-align: center;
+    margin-top: 70px;
+    border-bottom: 1px solid orangered;
+    padding-bottom: 100px;
+    img {
+        border: 2px solid $color-bordeImg;
+        box-shadow: 1px 1px 3px $color-bordeImg;
+        margin-bottom: 40px;
+    }
+}
+
+.parrafo-unoIndex {
+    margin-bottom: 42px;
+    width: 460px;
+    margin-left: 0.7rem;
+    border: 2px solid orangered;
+    border-radius: 34px;
+    padding: 16px;
+    box-shadow: 1px 1px 7px $color-shadow;
+}
+
+/* Estilos del main de index para computadoras */
+
+@media screen and (min-width: 800px) {
+    
+    /* imagenes presentacion */
+
+    .imagenes-presentacion {
+        @include img-presentacion;
+        div{ 
+            h4 {
+                @include img-presentacion-h4;
+        }
+    }
+}
+
+    .botom-img {
+        border: none;
+    }
+
+    /* Estilos del parrafo principal */
+
+    .presentacionIndex {
+        margin-top: 180px;
+        text-align: center;
+        h2 {
+            margin-bottom: 16px;
+        }
+        div {
+            display: flex;
+            gap: 200px;
+            justify-content: center;
+            margin-bottom: 150px;
+        }
+        img {
+            border: 2px solid $color-bordeImg;
+            box-shadow: 1px 0.4px 6px grey;
+            width: 300px;
+            height: 350px;
+            margin-bottom: 0;
+        }
+    }
+
+    .parrafo-unoIndex {
+        margin-bottom: 42px;
+        width: 720px;
+        margin-left: 256px;
+        border: 2px solid orangered;
+        border-radius: 34px;
+        padding: 16px;
+        box-shadow: 1px 1px 7px rgb(109, 52, 52);
+    }
+
+    /* Estilos de cada una de las consolas de index */
+
+    /* Play Station 2 index */
+
+    .play-index {
+        margin-top: 100px;
+        text-align: center;
+        p {
+            margin-top: 40px;
+            width: 700px;
+            margin-left: 288px;
+            border: 2px solid $color-bordeParrafo;
+            border-radius: 28px;
+            box-shadow: 1px 1px 7px $color-shadow;
+            padding: 15px;
+        }
+    }
+
+    /* Estilos de las imagenes de play station general de index */
+
+    .playImagenes-index {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 70px;
+        border-bottom: 1px solid orangered;
+        padding-bottom: 100px;
+        img {
+            border: 2px solid $color-bordeImg;
+            box-shadow: 1px 1px 3px $color-bordeImg;
+            margin-bottom: 0;
+        }
+        img:hover {
+            box-shadow: 1px 0.4px 5px greenyellow;
+            transform: scale(1.04);
+        }
+    }
+    .modifyImage-uno {
+        margin-top: 80px;
+    }
+    .modifyImage-dos {
+        margin-top: 80px;
+    }
+}
