@@ -5,6 +5,14 @@
   box-sizing: border-box;
   list-style: none; }
 
+.forms-preguntas, .forms-ideas {
+  text-align: left;
+  margin: 10px; }
+
+.forms-preguntas fieldset, .forms-ideas fieldset {
+  border: 1.4px dashed #e89d10;
+  padding: 10px; }
+
 /* Estilos del body */
 body {
   background-image: linear-gradient(#0c0c0c, #181818, #0c0c0c);
@@ -401,14 +409,6 @@ footer {
   .section-unoPreg p {
     padding: 16px; }
 
-.forms-preguntas {
-  text-align: center;
-  margin: 10px; }
-  .forms-preguntas fieldset {
-    border: 1.4px dashed #e89d10;
-    padding: 10px;
-    text-align: left; }
-
 .grids-preguntas {
   border-bottom: 0.6px solid orangered; }
 
@@ -501,15 +501,9 @@ footer {
     margin-top: 30px; }
 
 /* Estilos de la section -forms */
-.forms-ideas {
-  text-align: center;
+.section-ideas {
+  text-align: left;
   margin-top: 170px; }
-  .forms-ideas form {
-    text-align: left;
-    margin: 10px; }
-  .forms-ideas fieldset {
-    border: 1.4px dashed #e89d10;
-    padding: 10px; }
 
 .grid-ideas {
   border-bottom: 0.6px solid orangered; }

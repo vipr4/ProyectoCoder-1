@@ -33,18 +33,17 @@
 
 /* Estilos de la section -forms */
 
-.forms-ideas {
-    text-align: center;
+.section-ideas {
+    text-align: left;
     margin-top: 170px;
-    form {
-        text-align: left;
-        margin: 10px;
-    }
-    fieldset {
-        border: 1.4px dashed $color-bordeParrafo;
-        padding: 10px;
-    }
 }
+    .forms-ideas {
+        @extend %estilosForms;
+        fieldset {
+            @extend %estilosFieldset;
+        }
+    }
+
 
 .grid-ideas {
     border-bottom: 0.6px solid orangered;

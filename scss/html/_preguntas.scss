@@ -34,12 +34,9 @@
 }
 
 .forms-preguntas {
-    text-align: center;
-    margin: 10px;
+    @extend %estilosForms;
     fieldset {
-        border: 1.4px dashed $color-bordeParrafo;
-        padding: 10px;
-        text-align: left;
+        @extend %estilosFieldset;
     }
 }
 
