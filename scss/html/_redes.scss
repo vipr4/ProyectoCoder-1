@@ -1,1 +1,102 @@
-/
+/* Estilos de redes.html para celulares */
+
+/* Main */
+
+.main-redes {
+    div {
+    text-align: center;
+    margin-top: 70px;
+    }
+    h3 {
+    color: whitesmoke;
+    margin-bottom: 30px;
+    }
+    p {
+    padding: 1px 10px;
+    }
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    margin-top: 50px;
+    img {
+    width: 80px;
+    height: 130px;
+    }
+}
+
+.parrafo-redes {
+    margin-top: 50px;
+}
+
+/* Estilos de la section-giffs */
+
+.gifs {
+    div {
+    margin-top: 80px;
+    gap: 10px;
+    text-align: center;
+    }
+    img {
+    border: 1px solid whitesmoke;
+    box-shadow: 1px 1px 4px grey;
+    margin-bottom: 80px;
+    width: 300px;
+    height: 350px;
+    }
+}
+
+
+/* Estilos de Redes.html para computadoras */
+
+@media screen and (min-width: 800px) {
+
+    /* Estilos de grid */
+
+    .grid-redes {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 10px;
+
+        grid-template-areas: 
+        "mainUno gifs"
+        "mainUno gifs"
+        "mainUno gifs";
+
+        margin-top: 90px;
+    }
+
+    /* main */ 
+
+    .main-redes {
+        grid-area: mainUno;
+        p {
+        padding: 0px 20px;
+        }
+        div {
+        margin-top: 0;
+        }
+    }
+
+    .logos {
+        img {
+        margin-top: 60px;
+        }
+    }
+
+    .parrafo-redes {
+        margin-top: 90px;
+    }
+
+    /* Section-gifs */
+
+    .gifs {
+        grid-area: gifs;
+        border-left: 1px solid #e89d10;
+        div {
+        margin-top: 90px;
+        }
+    }
+}
