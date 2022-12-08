@@ -37,12 +37,13 @@
     text-align: left;
     margin-top: 170px;
 }
-    .forms-ideas {
-        @extend %estilosForms;
-        fieldset {
-            @extend %estilosFieldset;
-        }
+
+.forms-ideas {
+    @extend %estilosForms;
+    fieldset {
+        @extend %estilosFieldset;
     }
+}
 
 
 .grid-ideas {
@@ -106,6 +107,9 @@
         margin-right: 10px;
         p {
             padding: 8px;
+        }
+        fieldset {
+            width: 700px;
         }
     }
 }

@@ -1,3 +1,5 @@
+// Estilos generales
+
 /* reset */
 
 * {
@@ -7,42 +9,36 @@
     list-style: none;
 }
 
-@import "utilidades/variables";
-@import "utilidades/mixin";
-@import "utilidades/extend";
-
-/* Estilos del body */
+/*Estilos del body general */
 
 body {
     background-image: linear-gradient(#0c0c0c, #181818, #0c0c0c);
     color: whitesmoke;
     img {
-        width: 250px;
-        height: 300px;
+    width: 250px;
+    height: 300px;
     }
     b {
-        color: #e79022;
+    color: #e79022;
     }
     p {
-        font-size: 1rem;
-        font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
     }
     h2 {
-        font-size: 32px;
-        font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    font-family: 'Orbitron', sans-serif;
     }
     h3 {
-        font-size: 26px;
-        color: #ce8b0f;
-        text-decoration: underline;
-        font-family: 'Orbitron', sans-serif;
+    font-size: 26px;
+    color: #ce8b0f;
+    text-decoration: underline;
+    font-family: 'Orbitron', sans-serif;
     }
     a {
     text-decoration: none;
     }
 }
-
-/* Estilos del header general */
 
 header {
     display: flex;
@@ -53,59 +49,38 @@ header {
     top: 0;
     background-color: #0c0c0c;
     height: 80px;
-    h1 {
-        padding-left: 26px;
-        padding-top: 20px;
-        color: rgb(224, 224, 224);
-        font-family: 'Orbitron', sans-serif;
-        font-size: 30px;
-    }   
-    .color-ul {
-        display: flex;
-        padding: 25px;
-        background-color: #0c0c0c;
-        li {
-            margin-right: 54px;
-            border: 1.4px solid orangered;
-            box-shadow: 1px 1.3px rgb(109, 52, 52);
-            height: 36px;
-        }
-        a {
-            color: whitesmoke;
-            text-decoration: none;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 15px;
-            padding: 6px;
-        }
+}
+
+header h1 {
+    padding-left: 26px;
+    padding-top: 20px;
+    color: rgb(224, 224, 224);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+}
+
+.color-ul {
+    display: flex;
+    padding: 25px;
+    background-color: #0c0c0c;
+    li {
+    margin-right: 54px;
+    border: 1.4px solid orangered;
+    box-shadow: 1px 1.3px rgb(109, 52, 52);
+    height: 36px;
     }
-    .color-boton {
-        border: 1px solid orangered;
-        margin-top: 0;
+    a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 6px;
     }
 }
 
-/* Estilo de imagenes presentacion para celulares */ 
-
-.imagenes-presentacion {
-    display: block;
-    align-content: center;
-    margin-top: 80px;
-    text-align: center;
-    div {
-        margin-bottom: 40px;
-        img {
-            border: 1.4px solid $color-bordeParrafo;
-            color: whitesmoke;
-            box-shadow: 1px 0.4px 3px orange;
-        }
-        h4 {
-            padding: 12px;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1rem;
-            color: $color-titulos;
-            text-decoration: underline;
-        }
-    }
+.color-boton {
+    border: 1px solid orangered;
+    margin-top: 0;
 }
 
 /* Estilos de formularion (label) general */
@@ -123,24 +98,6 @@ footer {
     margin-top: 40px;
 }
 
-
-/* Estilos de index.Html */
+/* Estilos de index.html para celular */
 
 @import "html/index";
-
-/* Estilos de novedades.html */
-
-@import "html/novedades";
-
-/* Estilos de preguntas.html */
-
-@import "html/preguntas";
-
-/* Estilos de Tus ideas.html */
-
-@import "html/tusIdeas";
-
-/* Estilos de redes.html */
-
-@import "html/redes";
-
