@@ -1,3 +1,6 @@
+.grids-preguntas, .grid-ideas {
+  border-bottom: 0.6px solid orangered; }
+
 /* reset */
 * {
   margin: 0;
@@ -171,7 +174,7 @@ footer {
     justify-content: center;
     text-align: center;
     gap: 32px;
-    border-bottom: 0.4px solid #934500; }
+    border-bottom: 0.4px solid orangered; }
     .imagenes-presentacion div h4 {
       text-align: center;
       padding: 12px;
@@ -197,8 +200,8 @@ footer {
       margin-bottom: 16px; }
     .presentacionIndex div {
       display: flex;
-      gap: 200px;
       justify-content: center;
+      gap: 200px;
       margin-bottom: 150px; }
       .presentacionIndex div img {
         border: 2px solid whitesmoke;
@@ -355,6 +358,8 @@ footer {
       margin-bottom: 30px;
       color: #b80000; }
     .descripcion-videojuego div {
+      display: flex;
+      justify-content: center;
       margin-top: 10px; }
     .descripcion-videojuego img {
       border: 2px solid whitesmoke;
@@ -387,7 +392,7 @@ footer {
   .mainPreg img {
     margin-top: 20px;
     border: 1.4px solid #e89d10;
-    box-shadow: 1px 0.6px 5px #a52c00; }
+    box-shadow: 1px 0.6px 5px #6d3434; }
 
 /* Estilos de section-uno */
 .section-unoPreg {
@@ -411,9 +416,6 @@ footer {
     border: 1.4px dashed #e89d10;
     padding: 10px;
     text-align: left; }
-
-.grids-preguntas {
-  border-bottom: 0.6px solid orangered; }
 
 /* Estilos de preguntas.html para computadoras */
 @media screen and (min-width: 800px) {
@@ -469,8 +471,8 @@ footer {
       width: 620px; }
   .p-sectionPreg {
     margin-top: 0; }
-  .input-preg:hover {
-    background-color: #e79022;
+  .input-end:hover {
+    background-color: #e89d10;
     box-shadow: 1px 0.6px 5px;
     transition-duration: 0.4s; } }
 
@@ -490,7 +492,7 @@ footer {
   .parrafo-ideasUno p {
     text-align: center;
     border: 1.4px solid orangered;
-    box-shadow: 1px 0.4px 6px #702e2e;
+    box-shadow: 1px 0.4px 6px #6d3434;
     border-radius: 16px;
     width: 450px;
     height: 130px;
@@ -521,9 +523,6 @@ footer {
 
 .end {
   margin-top: 16px; }
-
-.grid-ideas {
-  border-bottom: 0.6px solid orangered; }
 
 .input-end {
   margin-bottom: 20px; }
@@ -558,16 +557,12 @@ footer {
   /* Estilos de la section 2 */
   .section-ideas {
     grid-area: forms;
-    border-left: 0.4px solid #e79022; }
+    border-left: 0.4px solid #e89d10; }
     .section-ideas form {
       padding: 1px 40px; }
   .p-ideas {
     padding: 8px;
-    margin-top: 20px; }
-  .input-end:hover {
-    background-color: #e79022;
-    box-shadow: 1px 0.6px 5px;
-    transition-duration: 0.4s; } }
+    margin-top: 20px; } }
 
 /* Estilos de redes.html para celulares */
 /* Main */
