@@ -16,35 +16,49 @@
 
 .parrafo-ideasUno {
     text-align: center;
+    p {
+    text-align: center;
     border: 1.4px solid orangered;
-    box-shadow: 1px 0.4px 6px $color-shadow;
+    box-shadow: 1px 0.4px 6px rgb(112, 46, 46);
     border-radius: 16px;
     width: 450px;
     height: 130px;
     margin-left: 15px;
     padding: 10px;
     padding-top: 15px;
+    }
     img {
-        width: 100px;
-        height: 120px;
-        margin-top: 30px;
+    width: 100px;
+    height: 120px;
+    margin-top: 30px;
     }
 }
 
 /* Estilos de la section -forms */
-
 .section-ideas {
-    text-align: left;
-    margin-top: 170px;
+    text-align: center;
 }
 
 .forms-ideas {
-    @extend %estilosForms;
+    form {
+    margin: 10px;
+    }
     fieldset {
-        @extend %estilosFieldset;
+    border: 1.4px dashed #e89d10;
+    padding: 10px;
+    margin: 1px 10px;
+    text-align: left;
     }
 }
 
+.p-ideas {
+    margin-top: 70px;
+    padding: 1px 10px;
+}
+
+.end {
+    margin-top: 16px;
+}
 
 .grid-ideas {
     border-bottom: 0.6px solid orangered;
@@ -58,22 +72,11 @@
 
 @media screen and (min-width: 800px) {
     
-    /*  Estilos del header */
-
-    .header-tusIdeas {
-        height: 90px;
-        justify-content: space-around;
-        h1 {
-            padding-top: 22px;
-        }
-    }
-    
     /* Estilos de grid */
 
     .grid-ideas {
         display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
-        gap: 10px;
+        grid-template-columns: 3fr 2fr 2fr;
 
         grid-template-areas: 
         "main parrafo parrafo"
@@ -86,9 +89,8 @@
     .main-ideas {
         grid-area: main;
         margin-top: 70px;
-        border-right: 1px solid $color-bordeParrafo;
         img {
-            margin-top: 20px;
+        margin-top: 20px;
         }
     }
 
@@ -97,19 +99,40 @@
     .parrafo-ideasUno {
         grid-area: parrafo;
         margin-top: 70px;
-        margin-left: 190px;
+        border-left: 0.4px solid #e89d10;
+        p {
+        margin-left: 140px;
+        background-color: rgb(224, 223, 223);
+        color: black;
+        border: 2px solid black;
+        box-shadow: 1px 0.6px 6px grey;
+        }
+        p:hover {
+            transform: scale(1.01);
+            transition: 0.4s;
+        }
     }
 
     /* Estilos de la section 2 */
 
-    .forms-ideas {
+    .section-ideas {
         grid-area: forms;
-        margin-right: 10px;
-        p {
-            padding: 8px;
-        }
-        fieldset {
-            width: 700px;
+        border-left: 0.4px solid #e79022;
+        form {
+            padding: 1px 40px;
         }
     }
+    
+    .p-ideas {
+        padding: 8px;
+        margin-top: 20px;
+    }
+
+    .input-end:hover {
+        background-color: #e79022;
+        box-shadow: 1px 0.6px 5px;
+        transition-duration: 0.4s;
+    }
 }
+
+

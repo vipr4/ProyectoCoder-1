@@ -475,3 +475,98 @@ footer {
     background-color: #e79022;
     box-shadow: 1px 0.6px 5px;
     transition-duration: 0.4s; } }
+
+/* Aqui se colocaran los estilos de Tus ideas.html para pantallas de celular*/
+/* Main */
+.main-ideas {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 60px; }
+  .main-ideas h2 {
+    font-size: 26px;
+    margin-bottom: 30px; }
+
+/* Estilos de las sections */
+.parrafo-ideasUno {
+  text-align: center; }
+  .parrafo-ideasUno p {
+    text-align: center;
+    border: 1.4px solid orangered;
+    box-shadow: 1px 0.4px 6px #702e2e;
+    border-radius: 16px;
+    width: 450px;
+    height: 130px;
+    margin-left: 15px;
+    padding: 10px;
+    padding-top: 15px; }
+  .parrafo-ideasUno img {
+    width: 100px;
+    height: 120px;
+    margin-top: 30px; }
+
+/* Estilos de la section -forms */
+.section-ideas {
+  text-align: center; }
+
+.forms-ideas form {
+  margin: 10px; }
+
+.forms-ideas fieldset {
+  border: 1.4px dashed #e89d10;
+  padding: 10px;
+  margin: 1px 10px;
+  text-align: left; }
+
+.p-ideas {
+  margin-top: 70px;
+  padding: 1px 10px; }
+
+.end {
+  margin-top: 16px; }
+
+.grid-ideas {
+  border-bottom: 0.6px solid orangered; }
+
+.input-end {
+  margin-bottom: 20px; }
+
+/* Estilos de tus ideas.html para computadoras */
+@media screen and (min-width: 800px) {
+  /* Estilos de grid */
+  .grid-ideas {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas: "main parrafo parrafo" "main parrafo parrafo" "main forms forms"; }
+  /* Estilos del main */
+  .main-ideas {
+    grid-area: main;
+    margin-top: 70px; }
+    .main-ideas img {
+      margin-top: 20px; }
+  /* Estilos de la section 1 */
+  .parrafo-ideasUno {
+    grid-area: parrafo;
+    margin-top: 70px;
+    border-left: 0.4px solid #e89d10; }
+    .parrafo-ideasUno p {
+      margin-left: 140px;
+      background-color: #e0dfdf;
+      color: black;
+      border: 2px solid black;
+      box-shadow: 1px 0.6px 6px grey; }
+    .parrafo-ideasUno p:hover {
+      transform: scale(1.01);
+      transition: 0.4s; }
+  /* Estilos de la section 2 */
+  .section-ideas {
+    grid-area: forms;
+    border-left: 0.4px solid #e79022; }
+    .section-ideas form {
+      padding: 1px 40px; }
+  .p-ideas {
+    padding: 8px;
+    margin-top: 20px; }
+  .input-end:hover {
+    background-color: #e79022;
+    box-shadow: 1px 0.6px 5px;
+    transition-duration: 0.4s; } }
