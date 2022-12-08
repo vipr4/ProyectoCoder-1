@@ -379,3 +379,99 @@ footer {
     padding-bottom: 70px; }
     .iframe-botom iframe {
       width: 560px; } }
+
+/* Estilos de preguntas.html para pantallas de celular */
+/*Estilos del main */
+.mainPreg {
+  margin-top: 50px;
+  text-align: center;
+  padding: 14px; }
+  .mainPreg img {
+    margin-top: 20px;
+    border: 1.4px solid #e89d10;
+    box-shadow: 1px 0.6px 5px #a52c00; }
+
+/* Estilos de section-uno */
+.section-unoPreg {
+  margin-top: 20px;
+  text-align: center; }
+  .section-unoPreg img {
+    border: 1px solid whitesmoke;
+    box-shadow: 1px 0.5px 5px whitesmoke; }
+  .section-unoPreg h3 {
+    margin-top: 50px;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: whitesmoke; }
+  .section-unoPreg p {
+    padding: 16px; }
+
+.forms-preguntas {
+  text-align: center;
+  margin: 10px; }
+  .forms-preguntas fieldset {
+    border: 1.4px dashed #e89d10;
+    padding: 10px;
+    text-align: left; }
+
+.grids-preguntas {
+  border-bottom: 0.6px solid orangered; }
+
+/* Estilos de preguntas.html para computadoras */
+@media screen and (min-width: 800px) {
+  /*Estilo del grid de preguntas */
+  .grids-preguntas {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "main titulo" "main titulo" "main titulo";
+    gap: 10px;
+    border-bottom: 0.6px solid orangered; }
+  /* Estilo del main de preguntas */
+  .mainPreg {
+    grid-area: main;
+    text-align: left;
+    margin-top: 50px; }
+    .mainPreg h2 {
+      color: whitesmoke;
+      text-decoration: underline;
+      padding-left: 10px; }
+    .mainPreg p {
+      margin-top: 20px;
+      margin-left: 10px; }
+  .img-grid {
+    width: 280px;
+    height: 350px;
+    border: 1px solid #e89d10;
+    box-shadow: 1px 0.4px 4px orange;
+    margin-top: 30px;
+    margin-left: 10px; }
+  /* Estilo de section-uno dentro de preguntas */
+  .forms-preguntas {
+    padding-left: 8px;
+    text-align: center; }
+  .section-unoPreg {
+    grid-area: titulo;
+    text-align: center;
+    margin-top: 50px;
+    padding: 12px; }
+    .section-unoPreg img {
+      border: 1px solid whitesmoke;
+      box-shadow: 1px 0.4px 5px grey;
+      margin-top: 12px; }
+    .section-unoPreg h3 {
+      color: whitesmoke;
+      text-decoration: none;
+      margin-top: 40px; }
+    .section-unoPreg div {
+      text-align: left;
+      margin-left: 10px; }
+    .section-unoPreg fieldset {
+      border: 2px dashed #e89d10;
+      width: 620px; }
+  .p-sectionPreg {
+    margin-top: 0; }
+  .input-preg:hover {
+    background-color: #e79022;
+    box-shadow: 1px 0.6px 5px;
+    transition-duration: 0.4s; } }
