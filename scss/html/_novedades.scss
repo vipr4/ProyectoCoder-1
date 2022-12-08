@@ -2,7 +2,7 @@
 
 .botom-img {
     padding-bottom: 50px;
-    border-bottom: 1px solid orangered;
+    border-bottom: 1px solid $border-botom;
 }
 
 /* Estilo del main de novedades */
@@ -52,7 +52,7 @@
     padding: 14px;
     h4 {
     margin-bottom: 30px;
-    color: rgb(184, 0, 0);
+    color: $color-subtitulos;
     }
     div {
     display: block;
@@ -72,17 +72,15 @@
 }
 
 .iframe-ps {
-    display: block;
-    align-content: center;
+    @include bloques;
     iframe {
     width: 460px;
     }
 }
 
 .iframe-botom {
-    display: block;
-    align-content: center;
-    border-bottom: 1px solid orangered;
+    @include bloques;
+    border-bottom: 1px solid $border-botom;
     padding-bottom: 70px;
     iframe {
     width: 460px;
@@ -141,11 +139,10 @@
         padding: 14px;
         h4 {
         margin-bottom: 30px;
-        color: rgb(184, 0, 0);
+        color: $color-subtitulos;
         }
         div {
-        display: flex;
-        justify-content: center;
+        @include felx;
         margin-top: 10px;
         }
         img {
@@ -164,17 +161,15 @@
     }
 
     .iframe-ps {
-        display: flex;
-        justify-content: center;
+        @include flex;
         iframe {
         width: 560px;
         }
     }
 
     .iframe-botom {
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid orangered;
+        @include flex;
+        border-bottom: 1px solid $border-botom;
         padding-bottom: 70px;
         iframe {
         width: 560px;

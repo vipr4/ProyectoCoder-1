@@ -355,8 +355,6 @@ footer {
       margin-bottom: 30px;
       color: #b80000; }
     .descripcion-videojuego div {
-      display: flex;
-      justify-content: center;
       margin-top: 10px; }
     .descripcion-videojuego img {
       border: 2px solid whitesmoke;
@@ -374,7 +372,7 @@ footer {
       width: 560px; }
   .iframe-botom {
     display: flex;
-    align-items: center;
+    justify-content: center;
     border-bottom: 1px solid orangered;
     padding-bottom: 70px; }
     .iframe-botom iframe {

@@ -8,8 +8,8 @@
     padding: 14px;
     img {
     margin-top: 20px;
-    border: 1.4px solid #e89d10;
-    box-shadow: 1px 0.6px 5px rgb(165, 44, 0);
+    border: 1.4px solid $color-boxParrafo;
+    box-shadow: 1px 0.6px 5px $color-shadow;
     }
 }
 
@@ -19,14 +19,14 @@
     margin-top: 20px;
     text-align: center;
     img {
-    border: 1px solid whitesmoke;
+    border: 1px solid $color-titulos-img;
     box-shadow: 1px 0.5px 5px whitesmoke;
     }
     h3 {
     margin-top: 50px;
     padding-left: 14px;
     padding-right: 14px;
-    color: whitesmoke;
+    color: $color-titulos-img;
     }
     p {
     padding: 16px;
@@ -37,14 +37,14 @@
     text-align: center;
     margin: 10px;
     fieldset {
-    border: 1.4px dashed #e89d10;
+    border: 1.4px dashed $color-boxParrafo;
     padding: 10px;
     text-align: left;
     }
 }
 
 .grids-preguntas {
-    border-bottom: 0.6px solid orangered;
+    @extend %estiloBorder;
 }
 
 /* Estilos de preguntas.html para computadoras */
@@ -64,7 +64,7 @@
             "main titulo";
     
         gap: 10px;
-        border-bottom: 0.6px solid orangered;
+        border-bottom: 0.6px solid $border-botom;
     }
 
     /* Estilo del main de preguntas */
@@ -74,7 +74,7 @@
         text-align: left;
         margin-top: 50px;
         h2 {
-        color: whitesmoke;
+        color: $color-titulos-img;
         text-decoration: underline;
         padding-left: 10px;
         }
@@ -85,9 +85,8 @@
     }
 
     .img-grid {
-        width: 280px;
-        height: 350px;
-        border: 1px solid #e89d10;
+        @include medidas(280px, 350px);
+        border: 1px solid $color-boxParrafo;
         box-shadow: 1px 0.4px 4px orange;
         margin-top: 30px;
         margin-left: 10px;
@@ -106,12 +105,12 @@
         margin-top: 50px;
         padding: 12px;
         img {
-        border: 1px solid whitesmoke;
+        border: 1px solid $color-titulos-img;
         box-shadow: 1px 0.4px 5px grey;
         margin-top: 12px;
         }
         h3 {
-        color: whitesmoke;
+        color: $color-titulos-img;
         text-decoration: none;
         margin-top: 40px;
         }
@@ -120,7 +119,7 @@
         margin-left: 10px;
         }
         fieldset {
-        border: 2px dashed #e89d10;
+        border: 2px dashed $color-boxParrafo;
         width: 620px;
         }
     }
@@ -129,8 +128,8 @@
         margin-top: 0;
     }
 
-    .input-preg:hover {
-        background-color: #e79022;
+    .input-end:hover {
+        background-color: $color-boxParrafo;
         box-shadow: 1px 0.6px 5px;
         transition-duration: 0.4s;
     }

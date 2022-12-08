@@ -18,18 +18,16 @@
     text-align: center;
     p {
     text-align: center;
-    border: 1.4px solid orangered;
-    box-shadow: 1px 0.4px 6px rgb(112, 46, 46);
+    border: 1.4px solid $border-botom;
+    box-shadow: 1px 0.4px 6px $color-shadow;
     border-radius: 16px;
-    width: 450px;
-    height: 130px;
+    @include medidas(450px, 130px);
     margin-left: 15px;
     padding: 10px;
     padding-top: 15px;
     }
     img {
-    width: 100px;
-    height: 120px;
+    @include medidas(100px, 120px);
     margin-top: 30px;
     }
 }
@@ -44,7 +42,7 @@
     margin: 10px;
     }
     fieldset {
-    border: 1.4px dashed #e89d10;
+    border: 1.4px dashed $color-boxParrafo;
     padding: 10px;
     margin: 1px 10px;
     text-align: left;
@@ -61,7 +59,7 @@
 }
 
 .grid-ideas {
-    border-bottom: 0.6px solid orangered;
+    @extend %estiloBorder;
 }
 
 .input-end {
@@ -99,7 +97,7 @@
     .parrafo-ideasUno {
         grid-area: parrafo;
         margin-top: 70px;
-        border-left: 0.4px solid #e89d10;
+        border-left: 0.4px solid $color-boxParrafo;
         p {
         margin-left: 140px;
         background-color: rgb(224, 223, 223);
@@ -117,7 +115,7 @@
 
     .section-ideas {
         grid-area: forms;
-        border-left: 0.4px solid #e79022;
+        border-left: 0.4px solid $color-boxParrafo;
         form {
             padding: 1px 40px;
         }
@@ -126,12 +124,6 @@
     .p-ideas {
         padding: 8px;
         margin-top: 20px;
-    }
-
-    .input-end:hover {
-        background-color: #e79022;
-        box-shadow: 1px 0.6px 5px;
-        transition-duration: 0.4s;
     }
 }
 

@@ -1,5 +1,9 @@
 // Estilos generales
 
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
 /* reset */
 
 * {
@@ -15,8 +19,7 @@ body {
     background-image: linear-gradient(#0c0c0c, #181818, #0c0c0c);
     color: whitesmoke;
     img {
-    width: 250px;
-    height: 300px;
+    @include medidas(250px, 300px);
     }
     b {
     color: #e79022;
