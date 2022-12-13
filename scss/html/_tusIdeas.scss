@@ -104,6 +104,10 @@
         color: black;
         border: 2px solid black;
         box-shadow: 1px 0.6px 6px grey;
+        padding: 20px;
+        font-size: 1.2rem;
+        font-family: 'Passion One', cursive;
+        @include medidas(430px, 130px);
         }
         p:hover {
             transform: scale(1.01);
@@ -122,7 +126,7 @@
     }
     
     .p-ideas {
-        padding: 8px;
+        padding: 8px 40px;
         margin-top: 20px;
     }
 }

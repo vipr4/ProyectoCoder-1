@@ -287,7 +287,8 @@ footer {
   .descripcionPs p {
     margin-top: 28px;
     margin-bottom: 60px;
-    text-align: center; }
+    text-align: center;
+    padding: 1px 14px; }
 
 /* Estilos de cada descripcion de videojuegos */
 .descripcion-videojuego {
@@ -296,6 +297,8 @@ footer {
   .descripcion-videojuego h4 {
     margin-bottom: 30px;
     color: #b80000; }
+  .descripcion-videojuego p {
+    padding-left: 20px; }
   .descripcion-videojuego div {
     display: block;
     text-align: center;
@@ -307,7 +310,8 @@ footer {
 
 .p-dosNovedades {
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding-left: 20px; }
 
 .iframe-ps {
   display: block;
@@ -349,7 +353,8 @@ footer {
     .descripcionPs p {
       margin-top: 28px;
       margin-bottom: 60px;
-      text-align: center; }
+      text-align: center;
+      padding: 1px 20px; }
   /* Estilos de cada descripcion de videojuegos */
   .descripcion-videojuego {
     margin-top: 70px;
@@ -444,6 +449,10 @@ footer {
     .mainPreg p {
       margin-top: 20px;
       margin-left: 10px; }
+  .hover-a:hover {
+    transform: scale(1.04);
+    color: gray;
+    transition: 0.5s; }
   .img-grid {
     width: 280px;
     height: 350px;
@@ -555,7 +564,12 @@ footer {
       background-color: #e0dfdf;
       color: black;
       border: 2px solid black;
-      box-shadow: 1px 0.6px 6px grey; }
+      box-shadow: 1px 0.6px 6px grey;
+      padding: 20px;
+      font-size: 1.2rem;
+      font-family: 'Passion One', cursive;
+      width: 430px;
+      height: 130px; }
     .parrafo-ideasUno p:hover {
       transform: scale(1.01);
       transition: 0.4s; }
@@ -566,7 +580,7 @@ footer {
     .section-ideas form {
       padding: 1px 40px; }
   .p-ideas {
-    padding: 8px;
+    padding: 8px 40px;
     margin-top: 20px; } }
 
 /* Estilos de redes.html para celulares */

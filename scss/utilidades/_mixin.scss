@@ -7,6 +7,11 @@
     height: $alto;
 }
 
+@mixin margin($top, $down) {
+    margin-top: $top;
+    margin-bottom: $down;
+}
+
 @mixin bloques {
     display: block;
     align-content: center;

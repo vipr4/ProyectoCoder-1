@@ -84,6 +84,12 @@
         }
     }
 
+    .hover-a:hover {
+        transform: scale(1.04);
+        color: gray;
+        transition: 0.5s;
+    }
+
     .img-grid {
         @include medidas(280px, 350px);
         border: 1px solid $color-boxParrafo;

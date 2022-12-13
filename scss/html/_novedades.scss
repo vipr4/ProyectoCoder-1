@@ -42,6 +42,7 @@
     margin-top: 28px;
     margin-bottom: 60px;
     text-align: center;
+    padding: 1px 14px;
     }
 }
 
@@ -53,6 +54,9 @@
     h4 {
     margin-bottom: 30px;
     color: $color-subtitulos;
+    }
+    p {
+    padding-left: 20px;
     }
     div {
     display: block;
@@ -67,8 +71,8 @@
 }
 
 .p-dosNovedades {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    @include margin(50px, 50px);
+    padding-left: 20px
 }
 
 .iframe-ps {
@@ -129,6 +133,7 @@
         margin-top: 28px;
         margin-bottom: 60px;
         text-align: center;
+        padding: 1px 20px;
         }
     }
 
