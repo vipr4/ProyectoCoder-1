@@ -9,6 +9,11 @@
     h2 {
     font-size: 26px;
     margin-bottom: 30px;
+    text-decoration: underline;
+    }
+    img {
+    border: 1.6px solid whitesmoke;
+    box-shadow: 1px 0.6px 5px grey;
     }
 }
 
@@ -18,9 +23,11 @@
     text-align: center;
     p {
     text-align: center;
-    border: 1.4px solid $border-botom;
-    box-shadow: 1px 0.4px 6px $color-shadow;
     border-radius: 16px;
+    border: 2px solid black;
+    box-shadow: 1px 0.6px 6px grey;
+    font-size: 1.2rem;
+    font-family: 'Passion One', cursive;
     @include medidas(450px, 130px);
     margin-left: 15px;
     padding: 10px;
@@ -66,6 +73,19 @@
     margin-bottom: 20px;
 }
 
+/* Estilos de tus ideas.html para tablets */
+
+@media screen and (min-width: 624px) {
+    
+    .parrafo-ideasUno {
+        p {
+            margin-left: 108px;
+            padding: 20px;
+            @include medidas(430px, 130px);
+        }
+    }
+}
+
 /* Estilos de tus ideas.html para computadoras */
 
 @media screen and (min-width: 800px) {
@@ -100,14 +120,6 @@
         border-left: 0.4px solid $color-boxParrafo;
         p {
         margin-left: 140px;
-        background-color: rgb(224, 223, 223);
-        color: black;
-        border: 2px solid black;
-        box-shadow: 1px 0.6px 6px grey;
-        padding: 20px;
-        font-size: 1.2rem;
-        font-family: 'Passion One', cursive;
-        @include medidas(430px, 130px);
         }
         p:hover {
             transform: scale(1.01);

@@ -186,6 +186,10 @@
         }
     }
 
+    .border-img {
+        border-bottom: none;
+    }
+
     .botom-img {
         border: none;
     }
@@ -250,11 +254,17 @@
 
     .playImagenes-index {
         display: flex;
-        gap: 30px;
+        gap: 10px;
         justify-content: center;
         margin-top: 70px;
         border-bottom: 1px solid $border-botom;
         padding-bottom: 100px;
+        .modifyImage-uno {
+        margin-top: 80px;
+        }
+        .modifyImage-dos {
+        margin-top: 80px;
+        }
         img {
         border: 2px solid $color-titulos-img;
         box-shadow: 1px 1px 3px whitesmoke;
@@ -264,14 +274,6 @@
         box-shadow: 1px 0.4px 7px rgb(255, 238, 0);
         transform: scale(1);
         }
-    }
-
-    .modifyImage-uno {
-        margin-top: 80px;
-    }
-
-    .modifyImage-dos {
-        margin-top: 80px;
     }
 }
 

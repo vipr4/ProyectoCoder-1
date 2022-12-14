@@ -33,7 +33,8 @@
 
 /* Estilos de la section-giffs */
 
-.gifs {
+.gifs { 
+    border-bottom: 1px solid orangered;
     div {
     margin-top: 80px;
     gap: 10px;
@@ -48,6 +49,16 @@
     }
 }
 
+/* Estilos de Redes.html para tablets */
+
+@media screen and (min-width: 624px) {
+     
+    .main-redes{ 
+        p {
+            padding: 10px 50px;
+        }
+     }
+}
 
 /* Estilos de Redes.html para computadoras */
 
@@ -66,6 +77,8 @@
         "mainUno gifs";
 
         margin-top: 90px;
+        border-bottom: 1px solid orangered;
+        padding-bottom: 70px;
     }
 
     /* main */ 
@@ -95,6 +108,7 @@
     .gifs {
         grid-area: gifs;
         border-left: 1px solid #e89d10;
+        border-bottom: none;
         div {
         margin-top: 90px;
         }

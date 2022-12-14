@@ -47,6 +47,18 @@
     @extend %estiloBorder;
 }
 
+/* Estilos de preguntas.html para tablets */
+
+@media screen and (min-width: 624px) {
+    
+    .mainPreg {
+        h2 {
+            margin-bottom: 34px;
+            text-decoration: underline;
+        }
+    }
+}
+
 /* Estilos de preguntas.html para computadoras */
 
 @media screen and (min-width: 800px) {

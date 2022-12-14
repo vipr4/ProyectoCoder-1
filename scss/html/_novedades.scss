@@ -91,6 +91,24 @@
     }
 }
 
+/* Estilos de Novedades.html para tablets */
+
+@media screen and (min-width: 624px) {
+
+    /* Estilos de gifs-img */
+    .descripcion-videojuego{
+        div {
+            img {
+                margin: 20px;
+            }
+        }
+    }
+
+    .iframe-ps {
+        text-align: center;
+    }
+}
+
 /* Estilos de Novedades.html para computadoras */
 
 @media screen and (min-width: 800px) {

@@ -1,5 +1,5 @@
 .grids-preguntas, .grid-ideas {
-  border-bottom: 1px solid orangered; }
+  border-bottom: 0.6px solid orangered; }
 
 /* reset */
 * {
@@ -213,6 +213,8 @@ footer {
       box-shadow: 1px 0.6px 5px red;
       transform: scale(1.02);
       transition-duration: 0.8s; }
+  .border-img {
+    border-bottom: none; }
   .botom-img {
     border: none; }
   /* Estilos del parrafo principal */
@@ -260,22 +262,22 @@ footer {
   /* Estilos de las imagenes de play station general de index */
   .playImagenes-index {
     display: flex;
-    gap: 30px;
+    gap: 10px;
     justify-content: center;
     margin-top: 70px;
     border-bottom: 1px solid orangered;
     padding-bottom: 100px; }
+    .playImagenes-index .modifyImage-uno {
+      margin-top: 80px; }
+    .playImagenes-index .modifyImage-dos {
+      margin-top: 80px; }
     .playImagenes-index img {
       border: 2px solid whitesmoke;
       box-shadow: 1px 1px 3px whitesmoke;
       margin-bottom: 0; }
     .playImagenes-index img:hover {
       box-shadow: 1px 0.4px 7px #ffee00;
-      transform: scale(1); }
-  .modifyImage-uno {
-    margin-top: 80px; }
-  .modifyImage-dos {
-    margin-top: 80px; } }
+      transform: scale(1); } }
 
 /* Estilo de novedades.html para celulares */
 .botom-img {
@@ -349,6 +351,14 @@ footer {
   padding-bottom: 70px; }
   .iframe-botom iframe {
     width: 460px; }
+
+/* Estilos de Novedades.html para tablets */
+@media screen and (min-width: 624px) {
+  /* Estilos de gifs-img */
+  .descripcion-videojuego div img {
+    margin: 20px; }
+  .iframe-ps {
+    text-align: center; } }
 
 /* Estilos de Novedades.html para computadoras */
 @media screen and (min-width: 800px) {
@@ -450,6 +460,12 @@ footer {
     padding: 10px;
     text-align: left; }
 
+/* Estilos de preguntas.html para tablets */
+@media screen and (min-width: 624px) {
+  .mainPreg h2 {
+    margin-bottom: 34px;
+    text-decoration: underline; } }
+
 /* Estilos de preguntas.html para computadoras */
 @media screen and (min-width: 800px) {
   /*Estilo del grid de preguntas */
@@ -521,16 +537,22 @@ footer {
   margin-bottom: 60px; }
   .main-ideas h2 {
     font-size: 26px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-decoration: underline; }
+  .main-ideas img {
+    border: 1.6px solid whitesmoke;
+    box-shadow: 1px 0.6px 5px grey; }
 
 /* Estilos de las sections */
 .parrafo-ideasUno {
   text-align: center; }
   .parrafo-ideasUno p {
     text-align: center;
-    border: 1.4px solid orangered;
-    box-shadow: 1px 0.4px 6px #6d3434;
     border-radius: 16px;
+    border: 2px solid black;
+    box-shadow: 1px 0.6px 6px grey;
+    font-size: 1.2rem;
+    font-family: 'Passion One', cursive;
     width: 450px;
     height: 130px;
     margin-left: 15px;
@@ -564,6 +586,14 @@ footer {
 .input-end {
   margin-bottom: 20px; }
 
+/* Estilos de tus ideas.html para tablets */
+@media screen and (min-width: 624px) {
+  .parrafo-ideasUno p {
+    margin-left: 108px;
+    padding: 20px;
+    width: 430px;
+    height: 130px; } }
+
 /* Estilos de tus ideas.html para computadoras */
 @media screen and (min-width: 800px) {
   /* Estilos de grid */
@@ -583,16 +613,7 @@ footer {
     margin-top: 70px;
     border-left: 0.4px solid #e89d10; }
     .parrafo-ideasUno p {
-      margin-left: 140px;
-      background-color: #e0dfdf;
-      color: black;
-      border: 2px solid black;
-      box-shadow: 1px 0.6px 6px grey;
-      padding: 20px;
-      font-size: 1.2rem;
-      font-family: 'Passion One', cursive;
-      width: 430px;
-      height: 130px; }
+      margin-left: 140px; }
     .parrafo-ideasUno p:hover {
       transform: scale(1.01);
       transition: 0.4s; }
@@ -632,17 +653,23 @@ footer {
   margin-top: 50px; }
 
 /* Estilos de la section-giffs */
-.gifs div {
-  margin-top: 80px;
-  gap: 10px;
-  text-align: center; }
+.gifs {
+  border-bottom: 1px solid orangered; }
+  .gifs div {
+    margin-top: 80px;
+    gap: 10px;
+    text-align: center; }
+  .gifs img {
+    border: 1px solid whitesmoke;
+    box-shadow: 1px 1px 4px grey;
+    margin-bottom: 80px;
+    width: 300px;
+    height: 350px; }
 
-.gifs img {
-  border: 1px solid whitesmoke;
-  box-shadow: 1px 1px 4px grey;
-  margin-bottom: 80px;
-  width: 300px;
-  height: 350px; }
+/* Estilos de Redes.html para tablets */
+@media screen and (min-width: 624px) {
+  .main-redes p {
+    padding: 10px 50px; } }
 
 /* Estilos de Redes.html para computadoras */
 @media screen and (min-width: 800px) {
@@ -652,7 +679,9 @@ footer {
     grid-template-columns: 3fr 2fr;
     gap: 10px;
     grid-template-areas: "mainUno gifs" "mainUno gifs" "mainUno gifs";
-    margin-top: 90px; }
+    margin-top: 90px;
+    border-bottom: 1px solid orangered;
+    padding-bottom: 70px; }
   /* main */
   .main-redes {
     grid-area: mainUno; }
@@ -667,6 +696,7 @@ footer {
   /* Section-gifs */
   .gifs {
     grid-area: gifs;
-    border-left: 1px solid #e89d10; }
+    border-left: 1px solid #e89d10;
+    border-bottom: none; }
     .gifs div {
       margin-top: 90px; } }
