@@ -95,6 +95,51 @@
     }
 }
 
+/* Estilos de idex.html para tablets */
+
+@media screen and (min-width: 624px) {
+    
+    /* Estilos del header */
+    header {
+        justify-content: space-around;
+    }
+
+    .presentacionIndex {
+        div {
+            img {
+                margin-left: 26px;
+            }
+        }
+    }
+
+    .parrafo-unoIndex {
+        margin-left: 108px;
+    }
+
+    .parrafo-dosIndex {
+        padding: 1px 40px;
+    }
+
+    .imagenes-presentacion img:hover {
+            box-shadow: 1px 0.6px 5px red;
+            transform: scale(1.02);
+            transition-duration: 0.8s;
+    }
+
+    .border-img {
+        border-bottom: 1px solid orangered;
+        padding-bottom: 50px;
+    }
+
+    .play-index p {
+        margin-left: 108px;
+    }
+
+    .playImagenes-index img {
+        margin: 16px 20px;
+    }
+}
+
 /* Estilos de idex.html para computadoras */
 
 @media screen and (min-width: 800px) {
