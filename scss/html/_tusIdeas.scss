@@ -25,7 +25,7 @@
     text-align: center;
     border-radius: 16px;
     border: 2px solid black;
-    box-shadow: 1px 0.6px 6px grey;
+    box-shadow: 1px 0.6px 6px orangered;
     font-size: 1.2rem;
     font-family: 'Passion One', cursive;
     @include medidas(450px, 130px);
@@ -36,6 +36,9 @@
     img {
     @include medidas(100px, 120px);
     margin-top: 30px;
+    animation-name: logos;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     }
 }
 
@@ -49,7 +52,7 @@
     margin: 10px;
     }
     fieldset {
-    border: 1.4px dashed $color-boxParrafo;
+    border: 1.4px dashed black;
     padding: 10px;
     margin: 1px 10px;
     text-align: left;
@@ -106,7 +109,7 @@
 
     .main-ideas {
         grid-area: main;
-        margin-top: 70px;
+        margin-top: 150px;
         img {
         margin-top: 20px;
         }
@@ -122,8 +125,8 @@
         margin-left: 140px;
         }
         p:hover {
-            transform: scale(1.01);
-            transition: 0.4s;
+        transform: scale(1.01);
+        transition: 0.4s;
         }
     }
 
@@ -131,9 +134,8 @@
 
     .section-ideas {
         grid-area: forms;
-        border-left: 0.4px solid $color-boxParrafo;
         form {
-            padding: 1px 40px;
+        padding: 1px 40px;
         }
     }
     

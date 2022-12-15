@@ -114,7 +114,14 @@ footer {
       font-family: 'Orbitron', sans-serif;
       font-size: 1rem;
       color: whitesmoke;
-      text-decoration: underline; }
+      text-decoration: underline;
+      animation-name: titulo;
+      animation-duration: 2s;
+      animation-iteration-count: infinite; }
+
+@keyframes titulo {
+  25% {
+    transform: scale(1.03); } }
 
 .parrafoIndex {
   font-size: 1.2rem;
@@ -321,7 +328,8 @@ footer {
   padding: 14px; }
   .descripcion-videojuego h4 {
     margin-bottom: 30px;
-    color: #b80000; }
+    color: #b80000;
+    font-family: 'Passion One', cursive; }
   .descripcion-videojuego p {
     padding-left: 20px; }
   .descripcion-videojuego div {
@@ -399,10 +407,8 @@ footer {
       display: flex;
       justify-content: center;
       margin-top: 10px; }
-    .descripcion-videojuego img {
-      border: 2px solid whitesmoke;
-      box-shadow: 1px 0.4px 6px grey;
-      margin: 50px 90px; }
+    .descripcion-videojuego .gif-descripcion {
+      margin: 30px 90px; }
     .descripcion-videojuego p {
       padding: 0px 20px; }
   .gif-descripcion:hover {
@@ -550,7 +556,7 @@ footer {
     text-align: center;
     border-radius: 16px;
     border: 2px solid black;
-    box-shadow: 1px 0.6px 6px grey;
+    box-shadow: 1px 0.6px 6px orangered;
     font-size: 1.2rem;
     font-family: 'Passion One', cursive;
     width: 450px;
@@ -561,7 +567,10 @@ footer {
   .parrafo-ideasUno img {
     width: 100px;
     height: 120px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    animation-name: logos;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
 
 /* Estilos de la section -forms */
 .section-ideas {
@@ -571,7 +580,7 @@ footer {
   margin: 10px; }
 
 .forms-ideas fieldset {
-  border: 1.4px dashed #e89d10;
+  border: 1.4px dashed black;
   padding: 10px;
   margin: 1px 10px;
   text-align: left; }
@@ -604,7 +613,7 @@ footer {
   /* Estilos del main */
   .main-ideas {
     grid-area: main;
-    margin-top: 70px; }
+    margin-top: 150px; }
     .main-ideas img {
       margin-top: 20px; }
   /* Estilos de la section 1 */
@@ -619,8 +628,7 @@ footer {
       transition: 0.4s; }
   /* Estilos de la section 2 */
   .section-ideas {
-    grid-area: forms;
-    border-left: 0.4px solid #e89d10; }
+    grid-area: forms; }
     .section-ideas form {
       padding: 1px 40px; }
   .p-ideas {
@@ -643,11 +651,19 @@ footer {
 .logos {
   display: flex;
   justify-content: center;
-  gap: 140px;
+  gap: 100px;
   margin-top: 50px; }
   .logos img {
     width: 80px;
-    height: 130px; }
+    height: 106px;
+    animation-name: logos;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite; }
+
+@keyframes logos {
+  25% {
+    transform: scale(1.1); } }
 
 .parrafo-redes {
   margin-top: 50px; }

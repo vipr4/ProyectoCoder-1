@@ -54,6 +54,7 @@
     h4 {
     margin-bottom: 30px;
     color: $color-subtitulos;
+    font-family: 'Passion One', cursive;
     }
     p {
     padding-left: 20px;
@@ -168,10 +169,8 @@
         @include flex;
         margin-top: 10px;
         }
-        img {
-        border: 2px solid whitesmoke;
-        box-shadow: 1px 0.4px 6px grey;
-        margin: 50px 90px;
+        .gif-descripcion {
+        margin: 30px 90px;
         }
         p {
         padding: 0px 20px;

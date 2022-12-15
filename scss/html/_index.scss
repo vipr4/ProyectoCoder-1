@@ -39,7 +39,15 @@
         font-size: 1rem;
         color: $color-titulos-img;
         text-decoration: underline;
+        animation-name: titulo;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
         }
+    }
+}
+@keyframes titulo {
+    25%{
+        transform: scale(1.03);
     }
 }
 
