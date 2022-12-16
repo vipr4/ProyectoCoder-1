@@ -4,8 +4,7 @@
 
 .main-ideas {
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 60px;
+    @include margin(100px, 60px);
     h2 {
     font-size: 26px;
     margin-bottom: 30px;
@@ -14,6 +13,7 @@
     img {
     border: 1.6px solid whitesmoke;
     box-shadow: 1px 0.6px 5px grey;
+    margin-bottom: 40px;
     }
 }
 
@@ -21,6 +21,7 @@
 
 .parrafo-ideasUno {
     text-align: center;
+    margin-top: 0;
     p {
     text-align: center;
     border-radius: 16px;
@@ -108,10 +109,19 @@
     /* Estilos del main */
 
     .main-ideas {
+        text-align: center;
         grid-area: main;
-        margin-top: 150px;
+        margin-top: 70px;
         img {
         margin-top: 20px;
+        @include medidas(250px, 270px);
+        display: block;
+        margin-left: 140px;
+        }
+        img:hover {
+        border: 1.6px solid rgb(79, 67, 67);
+        transition: 0.6s;
+        box-shadow: 1px 0.6px 4px rgb(40, 37, 37);
         }
     }
 
@@ -134,6 +144,8 @@
 
     .section-ideas {
         grid-area: forms;
+        border-left: 0.4px solid $color-boxParrafo;
+        margin-bottom: 70px;
         form {
         padding: 1px 40px;
         }
